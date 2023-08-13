@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -14,4 +16,209 @@ body {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins";
+}
+
+.topbarBtn {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 19px;
+  font-family: "bahnschrift";
+  border: none;
+  margin-top: 9px;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  padding: 20px;
+}
+
+.cabeçalho {
+  width: 100%;
+  height: 60px;
+  background-color: #bdbdbd;
+  display: inline-flex;
+}
+
+.dropbtn {
+  background-color: #bdbdbd;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 19px;
+  font-family: "bahnschrift";
+  border: none;
+  margin-top: 9px;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #494949;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: "bahnschrift";
+}
+
+/* Change color of dropdown links on hover 
+.dropdown-content a:hover {background-color: #3f3f3f;}
+
+/* Show the dropdown menu on hover 
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+.dropdown:hover .dropbtn {background-color: #3f3f3f;} */
+
+.corpo_1 {
+  width: 100%;
+  background-color: #f4675d;
+  color: black;
+  float: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 50%;
+  margin-top: 50px;
+}
+.corpo_2 {
+  color: white;
+  font-size: 14px;
+  font-family: "bahnschrift";
+  float: left;
+  text-align: left;
+  display: inline-flex;
+  padding-left: 50px;
+  background-color: #f4675d;
+}
+
+.banner {
+  height: 650px;
+  background-image: url(../Img/Banner_1.png);
+  background-attachment: fixed;
+  float: right;
+  text-align: center;
+  color: white;
+}
+.ladoalado {
+  display: inline-flex;
+}
+.Hobbies {
+  width: 100%;
+  height: 730px;
+  background-color: white;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  padding-top: 48%;
+}
+.Reserva {
+  background-color: #f4675d;
+  width: 100%;
+  height: 90px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 21px;
+}
+.contact {
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  display: inline-flex;
+}
+.Contatoimg {
+  height: 440px;
+  width: 660px;
+  justify-content: right;
+}
+h1 {
+  font-family: "bahnschrift";
+  font-size: 400%;
+  justify-content: center;
+}
+h2 {
+  font-family: "tahoma";
+  margin-top: 8%;
+  margin-left: 50px;
+  color: white;
+  font-size: 250%;
+}
+
+h3 {
+  text-align: center;
+  font-family: "bahnschrift";
+  font-size: 200%;
+  margin-top: 6%;
+}
+h4 {
+  font-family: "bahnschrift";
+  font-size: 200%;
+  text-align: left;
+  margin-top: 10%;
+}
+h5 {
+  font-family: "tahoma";
+  margin-top: 8%;
+  margin-left: 50px;
+  color: black;
+  font-size: 175%;
+  width: 85%;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content {
+  width: 100%;
+  height: 100%;
+  background-image: url(./assets/leilao2.png);
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+
+@media screen and (max-width:720px) {
+  .about-us-content {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

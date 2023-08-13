@@ -2,7 +2,7 @@
 $host = "localhost";
 $username = "seu_usuario";
 $password = "sua_senha";
-$database = "seu_banco_de_dados";
+$database = "icomunidade";
 
 $conn = new mysqli($host, $username, $password, $database);
 
