@@ -5,20 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iComunidade Sistema</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="./assets/iComunidade.png" type="image/png" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/shark.png" type="image/png" />
   </head>
   <body>
+    <div class="cabeçalho">
+      <div class="logo">
+        <li>
+          <a href="index.html" title="Voltar a página inicial"
+            ><img
+              class="logo"
+              src="./assets/iComunidade.png"
+              alt="Logo iComunidade"
+          /></a>
+        </li>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Início</button>
+        <div class="dropdown-content">
+          <a href="."></a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Sobre</button>
+        <div class="dropdown-content">
+          <a href=".">Início</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="topbarBtn" href="./pages/register.html">Cadastro</a>
+      </div>
+    </div>
+
     <div class="container">
       <h1>Login</h1>
-      <div id="login-form">
+      <form>
         <input type="text" id="username" placeholder="Nome de Usuário" />
         <input type="password" id="password" placeholder="Senha" />
-        <button id="login-button" onclick="">Login</button>
+        <button id="login-button">Entrar</button>
         <p id="login-status"></p>
-      </div>
-      <div id="results"></div>
+      </form>
     </div>
+
+    <script>
+      document.getElementById("login-button").addEventListener("click", () => {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const formData = new FormData();
+        formData.append("username", username);
+        formData.append("password", password);
+
+        fetch("api.php?action=login", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            const loginStatus = document.getElementById("login-status");
+            if (data.success) {
+              loginStatus.textContent = data.message;
+            } else {
+              loginStatus.textContent = data.message;
+            }
+          })
+          .catch((error) => console.error("Erro:", error));
+      });
+    </script>
   </body>
 </html>
