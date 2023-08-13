@@ -73,6 +73,7 @@ button {
   background-color: #bdbdbd;
   display: inline-flex;
 }
+<<<<<<< Updated upstream
 .logo {
   float: left;
   list-style: none;
@@ -83,6 +84,8 @@ button {
   padding-left: 32px;
   width: 18%;
 }
+=======
+>>>>>>> Stashed changes
 
 .dropbtn {
   background-color: #bdbdbd;
@@ -112,6 +115,7 @@ button {
   font-family: "bahnschrift";
 }
 
+<<<<<<< Updated upstream
 /* Links inside the dropdown */
 .dropdown-content a {
   color: white;
@@ -120,6 +124,8 @@ button {
   display: block;
 }
 
+=======
+>>>>>>> Stashed changes
 /* Change color of dropdown links on hover 
 .dropdown-content a:hover {background-color: #3f3f3f;}
 
